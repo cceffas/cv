@@ -10,35 +10,17 @@
 
 <body class="relative flex flex-col  h-screen w-full bg-gray-700">
 
-    <div class="absolute left-0 top-0 w-full flex items-center justify-center md:hidden ">
 
 
+    <main class="flex gap-2 grow min-h-96 w-full md:p-8 p-4">
 
-        <article class="flex gap-1 w-md h-32 border  text-blue-500 bg-white rounded-md backdrop-blur-md p-4">
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd"
-                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
-                    clip-rule="evenodd" />
-            </svg>
-
-            <p class="font-bold">para melhor experiencia, recomendo abrir está pagina num dispositivo com uma tela maior
-            </p>
-        </article>
-
-
-
-    </div>
-
-
-    <main class="flex grow min-h-96 w-full p-8">
         <aside class="flex flex-col gap-4 bg-gray-700 p-4 w-64 h-full overflow-y-auto overflow-x-hidden">
 
             <div class="flex flex-col items-center justify-center gap-2 w-full">
 
                 <span
                     class="flex items-center justify-center size-24 bg-white rounded-full overflow-hidden border-2 border-white ">
-                    <img src="./me.jpeg" alt="foto" class="object-cover h-full w-full">
+                    <img src="./me.jpeg" alt="foto" class="object-cover h-full w-full" draggable="false" loading="lazy" >
                 </span>
 
                 <h2 class="capitalize text-white font-bold ">pedro moisés julieta</h2>
@@ -266,11 +248,12 @@
             </div>
             <!-- end -->
             <div
-                class="container min-h-16 max-h-64 shadow-gray-300 shadow-md  bg-white rounded-md p-4 border-l-8 border-l-gray-700">
+                class="container  shadow-gray-300 shadow-md  bg-white rounded-md p-4 border-l-8 border-l-gray-700">
+
                 <h4>Técnico Médio de Informática INSTITUTO POLITÉCNICO PRIVADO ANHERC
                 </h4>
                 <ul>
-                    <li class="text-xs text-gray-600  mt-2">2021-2025</li>
+                    <li class="text-xs text-gray-600">2021-2025</li>
                 </ul>
             </div>
             <!-- end -->
