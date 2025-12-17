@@ -8,60 +8,80 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="relative flex flex-col  h-screen w-full bg-gray-700">
+<body class="relative flex flex-col h-screen w-full bg-gray-300">
 
 
 
-    <main class="flex gap-2 grow min-h-96 w-full md:p-8 p-4">
+    <main class="flex  flex-col items-center md:flex-row gap-2 grow min-h-96 w-full md:p-8 p-4">
 
-        <aside class="flex flex-col gap-4 bg-gray-700 p-4 w-64 h-full overflow-y-auto overflow-x-hidden">
+        <aside
+            class="relative flex flex-col gap-4 bg-gray-200 p-4 md:w-72 h-full md:overflow-y-auto overflow-x-hidden rounded-md container">
+
+
+            <div
+                class="absolute flex items-center justify-center right-2 top-2 size-8 ml-auto bg-sky-600 rounded-4xl text-white animate-pulse">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 7.5 7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+                </svg>
+
+
+            </div>
+            <!-- end -->
+
 
             <div class="flex flex-col items-center justify-center gap-2 w-full">
 
                 <span
                     class="flex items-center justify-center size-24 bg-white rounded-full overflow-hidden border-2 border-white ">
-                    <img src="./me.jpeg" alt="foto" class="object-cover h-full w-full" draggable="false" loading="lazy" >
+                    <img src="./me.jpeg" alt="foto" class="object-cover h-full w-full" draggable="false" loading="lazy">
                 </span>
 
-                <h2 class="capitalize text-white font-bold ">pedro moisés julieta</h2>
+                <h2 class="capitalize text-gray-700 text-xl font-extrabold ">pedro moisés julieta</h2>
+
 
             </div>
-            <!-- end -->
-            <div class="flex flex-col gap-2 text-white">
+            <hr class="separator">
 
-                <h2 class="font-bold">Biografia</h2>
-                <p class="text-sm opacity-60">técnico médio de informática, expressando ideias em linguagem de
+            <!-- end -->
+            <div class="flex flex-col gap-2 text-gray-700">
+
+                <h2 class="aside-title">Biografia</h2>
+                <p class="text-sm text-gray-500">Programador fullstack, 3 anos de experiencia expressando ideias em
+                    linguagem de
                     computador...</p>
-                <hr class="text-white mt-2">
+
+                <hr class="separator">
 
             </div>
 
             <!-- end -->
-            <div class="text-white">
+            <div class="text-gray-700">
 
-                <ul class="flex flex-col gap-2 text-sm  ">
+                <ul class="flex flex-col gap-2 text-sm">
 
                     <!-- end -->
                     <li>
-                        <h2 class="font-bold">Idioma</h2>
-                        <p class="opacity-50">Português</p>
-                        <p class="opacity-50">Inglês (tecnico) </p>
+                        <h2 class="aside-title">Idioma</h2>
+                        <p class="aside-text">Português</p>
+                        <p class="aside-text">Inglês (tecnico) </p>
 
                     </li>
                     <!-- end -->
                     <li>
-                        <h2 class="font-bold">Natalidade</h2>
-                        <p class="opacity-50">13-08-2005</p>
-                        <p class="opacity-50">luanda/cacuaco</p>
+                        <h2 class="aside-title">Natalidade</h2>
+                        <p class="aside-text">13-08-2005</p>
+                        <p class="aside-text">luanda/cacuaco</p>
                     </li>
                     <!-- end -->
                     <li>
-                        <h2 class="font-bold">sexo</h2>
-                        <p class="opacity-50">masculino</p>
+                        <h2 class="aside-title">sexo</h2>
+                        <p class="aside-text">masculino</p>
                     </li>
                     <!-- end -->
                     <li>
-                        <hr class="mt-2">
+                        <hr class="separator">
                     </li>
                 </ul>
 
@@ -69,60 +89,58 @@
             <!-- end -->
             <div>
 
-                <h2 class="font-bold text-white">Habilidades</h2>
+                <h2 class="font-bold text-gray-700">Habilidades</h2>
 
 
-                <ul class="list-disc text-white text-sm p-1">
+                <ul class="list-disc text-gray-700 text-sm p-1">
 
                     <li class="flex flex-wrap items-center gap-1">
-                        <span class="flex size-1 bg-white rounded-full"></span>
+                        <span class="dot"></span>
 
-                        <p class="opacity-50">trabalho em equipa</p>
+                        <p class="aside-text">trabalho em equipa</p>
                     </li>
                     <!-- end -->
                     <li class="flex flex-wrap items-center gap-1">
-                        <span class="flex size-1 bg-white rounded-full"></span>
+                        <span class="dot"></span>
 
-                        <p class="opacity-50">comunicativo (oratoria) </p>
+                        <p class="aside-text">comunicativo (oratoria) </p>
                     </li>
                     <!-- end -->
                     <li class="flex flex-wrap items-center gap-1">
-                        <span class="flex size-1 bg-white rounded-full"></span>
-                        <p class="opacity-50">pontualidade excelente</p>
+                        <span class="dot"></span>
+                        <p class="aside-text">pontualidade excelente</p>
                     </li>
                     <!-- end -->
                     <li class="flex flex-wrap items-center gap-1">
-                        <span class="flex size-1 bg-white rounded-full"></span>
+                        <span class="dot"></span>
+                        <p class="aside-text">capacidade de liderança</p>
+                    </li>
+                    <!-- end -->
 
-                        <p class="opacity-50">capacidade de liderança</p>
-                    </li>
-                    <!-- end -->
                     <li class="flex flex-wrap items-center gap-1">
-                        <hr class="text-white w-full my-4">
-                    </li>
-                    <!-- end -->
-                    <li class="flex flex-wrap items-center gap-1">
-                        <span class="flex size-1 bg-white rounded-full"></span>
 
-                        <p class="opacity-50">programação web & desktop</p>
+                        <span class="dot"></span>
+                        <p class="aside-text">programação web & desktop</p>
                     </li>
                     <!-- end -->
                     <li class="flex flex-wrap items-center gap-1">
-                        <span class="flex size-1 bg-white rounded-full"></span>
+                        <span class="dot"></span>
 
-                        <p class="opacity-50">design UI</p>
+                        <p class="aside-text">design UI</p>
                     </li>
 
 
                 </ul>
             </div>
             <!-- end -->
+
+            <hr class="separator">
+
             <div>
 
-                <h2 class="font-bold text-white">Contactos</h2>
+                <h2 class="font-bold text-gray-700">Contactos</h2>
 
-                <ul class="flex flex-col gap-2 justify-center text-white text-sm p-1">
-
+                <ul class="flex flex-col gap-2 justify-center text-gray-700 text-sm p-1">
 
                     <li class="flex flex-wrap items-center gap-1">
                         <h3>
@@ -133,7 +151,7 @@
                             </svg>
 
                         </h3>
-                        <p class="opacity-50">devcefas@gmail.com</p>
+                        <p class="aside-text">devcefas@gmail.com</p>
                     </li>
                     <!-- end -->
                     <li class="flex items-center gap-1">
@@ -143,7 +161,7 @@
                                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                             </svg>
                         </h3>
-                        <p class="opacity-50">+224 922 356 916</p>
+                        <p class="aside-text">+224 922 356 916</p>
                     </li>
                     <!-- end -->
                     <li class="flex flex-wrap items-center gap-1">
@@ -158,23 +176,20 @@
 
 
                         </h3>
-                        <p class="opacity-50">Angola/Luanda</p>
+                        <p class="aside-text">Angola/Luanda</p>
                     </li>
                     <!-- end -->
 
                 </ul>
             </div>
 
-
-
         </aside>
         <!-- end -->
         <section
-            class="flex flex-col items-center gap-4  bg-gray-200 grow p-4 h-full overflow-y-auto overflow-x-hidden rounded-md">
+            class="flex flex-col items-center gap-4 container bg-gray-200 grow p-4 h-full overflow-y-auto overflow-x-hidden rounded-md">
 
+            <div class="section-title">
 
-
-            <div class="container flex items-center gap-2 bg-gray-700 text-white p-2 rounded-md shadow-md">
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
                         <path fill-rule="evenodd"
@@ -191,47 +206,44 @@
                 <h4 class="font-bold">EXPERIÊNCIA PROFISSIONAL</h4>
             </div>
             <!-- end -->
-            <div
-                class="container max-h-64 shadow-gray-300 shadow-md  bg-white rounded-md p-4 border-l-8 border-l-gray-700">
-                <h4>DTN TECH</h4>
+            <div class="section-card">
+                <h4 class="card-title">DTN TECH</h4>
                 <ul>
-                    <li class="text-sm text-gray-600 ">desenvolvedor front-end:</li>
-                    <li class="text-sm text-gray-600  max-w-md">minha primeira experiencia, criando interfaces e paginas
+                    <li class="card-text">desenvolvedor front-end:</li>
+                    <li class="card-text max-w-md">minha primeira experiencia, criando interfaces e paginas
                         na web,
-                        estagio na empresa dtn-tech <mark>domtomanosso tecnologias </mark></li>
+                        estagio na empresa dtn-tech domtomanosso tecnologias</li>
 
-                    <li class="text-xs text-gray-600  mt-2">2020-2022</li>
+                    <li class="card-time-line">2020-2022</li>
                 </ul>
             </div>
             <!-- end -->
 
-            <div
-                class="container max-h-64 shadow-gray-300 shadow-md  bg-white rounded-md p-4 border-l-8 border-l-gray-700">
-                <h4>Pobu</h4>
+            <div class="section-card">
+                <h4 class="card-title">Pobu</h4>
                 <ul>
-                    <li class="text-sm text-gray-600 ">programador fullstack</li>
-                    <li class="text-sm text-gray-600  max-w-md">estagio curricular, desenvolvemos uma plataforma de
+                    <li class="card-text">programador fullstack</li>
+                    <li class="card-text max-w-md">estagio curricular, desenvolvemos uma plataforma de
                         streaming, como trabalho final do estagio</li>
 
-                    <li class="text-xs text-gray-600  mt-2">2025-2025</li>
+                    <li class="card-time-line">2025-2025</li>
                 </ul>
             </div>
             <!-- end -->
-            <div
-                class="container max-h-64 shadow-gray-300 shadow-md  bg-white rounded-md p-4 border-l-8 border-l-gray-700">
-                <h4>MKIT (HONG KONG) HOLDINGS LIMITED
+            <div class="section-card">
+                <h4 class="card-title">MKIT (HONG KONG) HOLDINGS LIMITED
                 </h4>
                 <ul>
-                    <li class="text-sm text-gray-600 ">emprea chinesa,que oferece serviços de recursos humanos e
+                    <li class="card-text">emprea chinesa,que oferece serviços de recursos humanos e
                         tratamento de anuncios</li>
-                    <li class="text-sm text-gray-600  max-w-md">atualmente como revisor de anuncios</li>
+                    <li class="card-text max-w-md">atualmente como revisor de anuncios</li>
 
-                    <li class="text-xs text-gray-600  mt-2">2025</li>
+                    <li class="card-time-line">2025</li>
                 </ul>
             </div>
             <!-- end -->
 
-            <div class="container flex items-center gap-2 bg-gray-700 text-white p-2 rounded-md shadow-md">
+            <div class="section-title">
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                         <path
@@ -247,32 +259,28 @@
                 <h4 class="font-bold">EDUCAÇÃO E FORMAÇÃO</h4>
             </div>
             <!-- end -->
-            <div
-                class="container  shadow-gray-300 shadow-md  bg-white rounded-md p-4 border-l-8 border-l-gray-700">
+            <div class="section-card">
 
-                <h4>Técnico Médio de Informática INSTITUTO POLITÉCNICO PRIVADO ANHERC
+                <h4 class="card-title">Técnico Médio de Informática INSTITUTO POLITÉCNICO PRIVADO ANHERC
                 </h4>
                 <ul>
-                    <li class="text-xs text-gray-600">2021-2025</li>
+                    <li class="card-time-line">2021-2025</li>
                 </ul>
             </div>
             <!-- end -->
-            <div
-                class="container max-h-64 shadow-gray-300 shadow-md  bg-white rounded-md p-4 border-l-8 border-l-gray-700">
-                <h4>DTN TECH(curso de programação web html,css, javascript & php)
+            <div class="section-card">
+                <h4 class="card-title">DTN TECH(curso de programação web html,css, javascript & php)
                 </h4>
                 <ul>
-                    <li class="text-xs text-gray-600  mt-2">2020-2020</li>
+                    <li class="card-time-line">2020-2020</li>
                 </ul>
             </div>
             <!-- end -->
-            <!-- end -->
-            <div
-                class="container max-h-64 shadow-gray-300 shadow-md  bg-white rounded-md p-4 border-l-8 border-l-gray-700">
-                <h4>DTN TECH(curso de manutenção e reparação de computadores)
+            <div class="section-card">
+                <h4 class="card-title">DTN TECH(curso de manutenção e reparação de computadores)
                 </h4>
                 <ul>
-                    <li class="text-xs text-gray-600  mt-2">2020-2020</li>
+                    <li class="card-time-line">2020-2020</li>
                 </ul>
             </div>
             <!-- end -->
